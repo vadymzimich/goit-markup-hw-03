@@ -16,7 +16,7 @@
   --button-color: #2196f3;
 
   /* Backgroung colors */
-  --primary-background-color: #f5f5f5;
+  --primary-background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --header-backgroun-color: #ffffff;
   --team-section-color: #f5f4fa;
@@ -67,11 +67,11 @@ ul {
 
 .header {
   background-color: var(--header-backgroun-color);
+  height: 80px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-wrapper {
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
   display: flex;
   align-items: center;
 }
@@ -156,10 +156,10 @@ ul {
   color: var(--hover-focus-color);
 }
 
-.header-line {
+/* .header-line {
   width: auto;
   border-bottom: 1px solid #ececec;
-}
+} */
 
 /* ---------------------Webstudio page styles------------------- */
 
@@ -172,7 +172,7 @@ ul {
 }
 
 .hero-container {
-  height: calc(100vh - 81px);
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -220,7 +220,6 @@ ul {
 
 .benefits-list {
   display: flex;
-  justify-content: space-around;
 }
 .benefits-list .benefits-item + .benefits-item {
   margin-left: 30px;
@@ -249,6 +248,10 @@ ul {
   display: block;
 }
 
+.work-section {
+  padding-top: 0;
+}
+
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -269,6 +272,7 @@ ul {
 
 .team-section {
   background-color: var(--team-section-color);
+  /* padding-bottom: 94px; */
 }
 
 .team-list {
@@ -276,6 +280,11 @@ ul {
 }
 .team-list .team-item + .team-item {
   margin-left: 30px;
+}
+
+.card-txt {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title {
@@ -291,7 +300,6 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 10px;
-  padding-top: 30px;
 }
 
 .card-box {
@@ -307,7 +315,6 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   color: var(--secondary-text-color);
-  padding-bottom: 30px;
 }
 
 /*------------- Footer styles--------------- */
@@ -368,7 +375,7 @@ ul {
 
 /* ----------------------------------------Portfolio page styles-------------------------------------- */
 
-/* --Main content in portfolio page-- */
+/* --Main content in Portfolio page-- */
 
 .filter-button {
   font-family: inherit;
@@ -404,7 +411,6 @@ ul {
 .projects-box {
   width: 370px;
   background-color: var(--box-color);
-  border: 1px solid var(--projects-card-border);
 }
 
 .projects-list {
@@ -423,6 +429,8 @@ ul {
 
 .box-container-info {
   padding: 20px 24px;
+  border: 1px solid var(--projects-card-border);
+  border-top: 0;
 }
 
 .project-type {
