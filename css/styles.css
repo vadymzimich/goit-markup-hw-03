@@ -172,7 +172,7 @@ ul {
 }
 
 .hero-container {
-  height: calc(100vh - 80px);
+  padding: 200px 0px 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -323,6 +323,7 @@ ul {
 
 .footer {
   background-color: var(--secondary-background-color);
+  padding: 60px 0px 60px;
 }
 
 .footer-logo {
@@ -332,7 +333,6 @@ ul {
   line-height: 1.19;
   text-decoration: none;
   color: var(--footer-color);
-  padding-top: 60px;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -354,7 +354,6 @@ ul {
 
 .address-item:last-child {
   margin-bottom: 0;
-  padding-bottom: 60px;
 }
 
 /* Contacts in footer */
@@ -395,7 +394,7 @@ ul {
 }
 
 .filter-list {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
